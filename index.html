@@ -10,27 +10,71 @@
 
     <title>Giftastic</title>
 
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- Bootstrap CSS 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/simplex/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
+    <!-- Jumbo -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Cities by Gif</h1>
+            <h4>Click and Search by GIPHY.</h4>
+        </div>
+    </div>
+    <!-- /Jumbo -->
 
 
-    <!-- Important jQuery -->
+    <!-- Search -->
+    <nav class="navbar navbar-inverse">
+        <form class="navbar-form navbar-center" id="subjectSearch">
+            <div for="subjectInput" class="form-group">
+                <input type="text" class="form-control" id="subjectInput" placeholder="Search">
+            </div>
+            <button type="submit" id="addShow" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="search for city">Submit</button>
+        </form>
+    </nav>
+    <!-- /Search -->
+
+
+    <div class="container">
+
+        <!-- Cities Tabs -->
+        <ul class="nav nav-tabs" id="myButtons">
+            <li class="show" data-search="london"><a href="#london" data-toggle="tab" aria-expanded="flase">London</a></li>
+            <li class="show" data-search="paris"><a href="#paris" data-toggle="tab" aria-expanded="false">Paris</a></li>
+            <li class="show" data-search="new york city"><a href="#nyc" data-toggle="tab" aria-expanded="false">NYC</a></li>
+            <li class="show" data-search="san francisco"><a href="#sanfran" data-toggle="tab" aria-expanded="false">San Francisco</a></li>
+        </ul>
+        <!-- /Cities Tabs -->
+
+
+        <!-- Cities Content -->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade" id="london">
+            </div>
+            <div class="tab-pane fade" id="paris">
+            </div>
+            <div class="tab-pane fade" id="new york city">
+            </div>
+            <div class="tab-pane fade" id="san francisco">
+            </div>
+        </div>
+        <!-- Cities Content -->
+
+
+    </div> -->
+    <!-- /.container -->
+
+    <!-- Google ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap Js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom Js -->
-    <!-- <script src="assets/js/"></script> -->
-        
+    <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>

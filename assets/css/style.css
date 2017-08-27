@@ -12,28 +12,29 @@ Base Styles
 =========*/
 
 
-/* Fonts */
-
-
-/* Elements */
-
-
-/* Classes */
-
-
-/* IDs */
-
-
 /*=========
-Nav
+Main
 =========*/
 
 
-/*=========
-Header
-=========*/
+/* Giphy Displays */
 
+.tab-content {
+	padding-top: 30px;
+}
 
-/*=========
-Footer
-=========*/
+.show {
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#subjectSearch {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.subjectGiphy {
+	padding: 2px;
+}
